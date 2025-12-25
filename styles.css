@@ -6,6 +6,10 @@ body {
     color: #E3E3E3;
 }
 
+a:hover {
+    color: #FFBD44 !important;
+}
+
 /* Header */
 
 .header {
@@ -19,6 +23,15 @@ body {
     gap: 2rem;
 }
 
+.header a {
+    color: #E3E3E3;
+    text-decoration: none;
+}
+
+#about {
+    scroll-margin-top: 2.5rem;
+}
+
 /* Introduction */
 
 .intro {
@@ -27,9 +40,25 @@ body {
 }
 
 .intro h1 {
-    font-family: "Google Sans Code", monospace;
-    font-weight: 100;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-size: 5rem;
+}
+
+.intro .cursor {
+    display: inline-block;
+    animation: blink 1s steps(1) infinite;
+    background-color: #E3E3E3;
+    margin-left: 0.5rem;
+    width: 2rem;
+    height: 0.75em;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .intro p {
@@ -83,14 +112,35 @@ body {
 }
 
 .terminal p {
-    font-family: "Google Sans Code", monospace;
-    letter-spacing: 0.08rem;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 1.25rem;
     margin: 0;
 }
 
 .CLI-command {
     padding: 2rem;
     padding-bottom: 0;
+}
+
+.CLI-command .cursor {
+    display: inline-block;
+    animation: blink 1s steps(1) infinite;
+    background-color: #E3E3E3;
+    width: 0.7rem;
+    height: 1.15em;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.CLI-command a {
+    color: #00FFFF;
+    text-decoration: none;
 }
 
 /* Projects */
@@ -122,8 +172,15 @@ body {
     background-color: #456882;
     font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
+    width: 50rem;
     padding: 2rem;
     padding-left: 5rem;
+    padding-right: 3rem;
+}
+
+.project-intro a {
+    color: #00FFFF;
+    text-decoration: none;
 }
 
 .project-skills {

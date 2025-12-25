@@ -9,26 +9,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <!-- Header -->
         <div class="header">
-            <a>Projects</a>
-            <a>Contact</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
         </div>
 
         <!-- Introduction -->
         <div class="intro">
-            <h1>> nthBit</h1>
+            <h1>&gt; nthBit<span class="cursor"></span></h1>
             <p>Aspiring web and software developer.</p>
             <p>Driven by a passion for building and creating.</p>
             <p>Explore my work below.</p>
         </div>
 
         <!-- Contact -->
-        <div class="terminal">
+        <div class="terminal" id="about">
             <div class="terminal-bar">
                 <div class="terminal-buttons">
                     <div class="button red"></div>
@@ -37,36 +37,40 @@
                 </div>
             </div>
             <div class="CLI-command">
-                <p>> Sam.location</p>
+                <p>&gt; Sam.location</p>
                 <p>"London, England"</p>
             </div>
             <div class="CLI-command">
-                <p>> Sam.contact</p>
-                <p>["pymagus@gmail.com", "samuel.church@ou.ac.uk", "LinkedIn", "GitHub"]</p>
+                <p>&gt; Sam.contact</p>
+                <p>
+                    ["samuel.church@ou.ac.uk", 
+                    <span><a href="https://www.linkedin.com/in/samuel-church-1a477b39a/">"LinkedIn"</a></span>,
+                    <span><a href="https://github.com/nthBit">"GitHub"</a></span>]
+                </p>
             </div>
             <div class="CLI-command">
-                <p>> Sam.resume</p>
+                <p>&gt; Sam.CV</p>
                 <p>"sam.church.pdf"</p>
             </div>
             <div class="CLI-command">
-                <p>> Sam.hobbies</p>
+                <p>&gt; Sam.hobbies</p>
                 <p>["Gym", "Travel", "Gaming", "Cinema"]</p>
             </div>
             <div class="CLI-command">
-                <p>> Sam.education</p>
+                <p>&gt; Sam.education</p>
                 <p>"Ongoing: Computer Science and AI degree - Open University"</p>
             </div>
             <div class="CLI-command">
-                <p>> Sam.languages</p>
+                <p>&gt; Sam.languages</p>
                 <p>["HTML", "CSS", "JavaScript", "Python"]</p>
             </div>
             <div class="CLI-command">
-                <p>> </p>
+                <p>&gt; <span class="cursor"></span></p>
             </div>
         </div>
 
         <!-- Projects -->
-        <div class="project-title">
+        <div class="project-title" id="projects">
             <h2>Projects</h2>
         </div>
 
@@ -77,8 +81,8 @@
             <div class="project-intro">
                 <h3>nthBit</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    My personal portfolio website, built with HTML and CSS. This was my first website and after learning more about 
+                    web design, this is my improved second version. I plan to add responsiveness and JavaScript enhancements soon.
                 </p>
                 <div class="project-skills">
                     <h4>HTML5</h4>
@@ -98,8 +102,10 @@
             <div class="project-intro">
                 <h3>Avis Hotel</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    My hotel website, based on the website of the hotel I currently work for 
+                    (<span><a href="https://avishotel.co.uk/">avishotel.co.uk</a></span>), 
+                    with the goal of improving it. The original site still uses Lorem Ipsum, placeholder images 
+                    and was built with WordPress - mine is built entirely with HTML and CSS.
                 </p>
                 <div class="project-skills">
                     <h4>HTML5</h4>
