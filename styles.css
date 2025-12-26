@@ -4,10 +4,11 @@ body {
     margin-left: 17.5%;
     background-color: #1B3C53;
     color: #E3E3E3;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 a:hover {
-    color: #FFBD44 !important;
+    color: #00FFFF !important;
 }
 
 /* Header */
@@ -15,9 +16,8 @@ a:hover {
 .header {
     display: flex;
     justify-content: right;
-    font-family: "Open Sans", sans-serif;
     font-size: 1.25rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     width: 100%;
     height: 3rem;
     gap: 2rem;
@@ -40,10 +40,9 @@ a:hover {
 }
 
 .intro h1 {
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
+    font-family: "Fira Code", monospace;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 .intro .cursor {
@@ -62,7 +61,6 @@ a:hover {
 }
 
 .intro p {
-    font-family: "Open Sans", sans-serif;
     font-size: 1.15rem;
 }
 
@@ -112,10 +110,8 @@ a:hover {
 }
 
 .terminal p {
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 1.25rem;
+    font-family: "Fira Code", monospace;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -139,7 +135,7 @@ a:hover {
 }
 
 .CLI-command a {
-    color: #00FFFF;
+    color: #FFD966;
     text-decoration: none;
 }
 
@@ -147,9 +143,22 @@ a:hover {
 
 .project-title {
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+.project-title h2 {
+    font-family: "Fira Code", monospace;
+    font-size: 2.15rem;
+    font-weight: 400;
+    margin: 0.5rem;
+}
+
+.project-title hr {
+    background-color: #E3E3E3;
+    margin-top: 0;
+    width: 7%;
+    height: 0.2rem;
 }
 
 .project-card {
@@ -158,8 +167,8 @@ a:hover {
 }
 
 .project-img {
-    height: 25rem;
-    width: 35rem;
+    height: 21.5rem;
+    width: 30rem;
 }
 
 .project-img img {
@@ -169,18 +178,32 @@ a:hover {
 }
 
 .project-intro {
+    display: flex;
+    flex-direction: column;
     background-color: #456882;
-    font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
     width: 50rem;
     padding: 2rem;
-    padding-left: 5rem;
-    padding-right: 3rem;
+    padding-left: 3.3rem;
+    padding-right: 3.3rem;
+    gap: 2.5rem;
 }
 
-.project-intro a {
-    color: #00FFFF;
+.project-intro h3 {
+    font-family: "Fira Code", monospace;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.project-intro p {
+    letter-spacing: 0.04rem;
+    margin: 0;
+}
+
+.project-intro p a {
     text-decoration: none;
+    color: #FFD966;
 }
 
 .project-skills {
@@ -188,39 +211,33 @@ a:hover {
     gap: 1rem;
 }
 
-.project-skills h4 {
-    border: 0.1rem solid #234C6A;
-    border-radius: 5%;
-    padding: 0.3rem;
-}
-
-.project-links {
+.skill {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: #456882;
-    color: #E3E3E3;
-    border: 0.1rem solid #234C6A;
-    border-radius: 3%;
-    padding: 0.4rem 0.5rem 0.4rem 0.5rem;
-    width: 8.35rem;
-    gap: 0.5rem;
 }
 
-.project-links p {
-    margin: 0;
+.skill img {
+    width: 3.5rem;
 }
 
-.project-links img {
-    height: 1.5rem;
+.skill h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 /* Footer */
 
 .footer {
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
-    height: 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    height: 2.5rem;
     margin: 0;
+}
+
+.footer a {
+    color: #E3E3E3;
+    text-decoration: none;
 }
